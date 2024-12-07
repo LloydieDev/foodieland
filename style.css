@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: #fff;
+    
+}
+
+
+.nav-bar-section {
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 40px;
+}
+.logo {
+    transition: ease-in-out 0.5s;
+}
+
+.logo img:hover{
+    cursor: pointer;
+    height: 22px;
+}
+
+.nav-bar-section-link-page {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-bar-section-link-page a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 700px;
+    font-size: 16px;
+    transition: transform 0.3s ease ;
+}
+
+.nav-bar-section-link-page a:hover {
+    font-weight: bold;
+}
+
+.nav-bar-section-social-icons  {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s ease, height 0.3s ease, width 0.3s ease;
+}
+
+.nav-bar-section-social-icons img:hover {
+    cursor: pointer;
+    transform: scale(1.2) translateY(-5px); /* Scale up and move slightly upwards */
+    height: 24px; /* Increase size */
+    width: 24px; /* Increase size */
+}
+.nav-bar-seperator {
+    border: 0.5px solid rgb(218, 218, 218);
+    margin: 0;
+}
+
+
+.hero-section {
+    margin: 40px;
+    height: 750px; /* Full height of the container */
+    display: flex;
+    box-sizing: border-box; /* Makes sure the padding does not affect the layout */
+    position: relative;
+  }
+  
+  .hero-section-introduction {
+    height: 100%;
+    width: 50%;
+    background-color: #E7FAFE;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    z-index: 2;
+  }
+  
+  .hero-section-image {
+    position: relative;
+    width: 50%;
+    height: 100%; /* Ensure the image container takes full height */
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .hero-section-image img {
+    width: 100%;
+    height: 100%; /* Ensures the image takes the full height of the container */
+    object-fit: cover;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+
+.hero-section-introduction-wrapper {
+    margin: 40px 60px;
+}
+
+.hot-recipes-btn-container {
+    height:45px;
+    width: 150px;
+    padding:10px 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    font-size:14px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+
+}
+.hot-recipes-btn-container > img {
+    width: 24px;
+    height: 24px;
+}
+
+.hot-recipes-btn-container:hover {
+    cursor: pointer;
+}
+
+.hero-section-introduction-content > h1 {
+    font-size: 96px;
+    margin: 30px 0;
+}
+
+.hero-section-introduction-content > p {
+    font-size: 24px;
+    color: #585858;
+    margin: 0;
+}
+
+.preperation-btn-section {
+    display: flex;
+    gap: 10px;
+    margin: 30px 0 120px;
+}
+
+.preperation-btn-section > .timer-btn-container , .preperation-btn-section > .forknife-btn-container {
+    width: 140px;
+    height: 40px;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    background-color: #00000010;
+
+}
+
+.timer-btn-container:hover, .forknife-btn-container:hover {
+    cursor: pointer;
+}
+
+.timer-btn-container > img, .forknife-btn-container > img {
+    height: 24px;
+    width: 24px;
+}
+
+.hero-section-introduction-chef-wrapper {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+
+.hero-section-introduction-chef {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 180px;
+    gap: 15px;
+}
+
+.hero-section-introduction-chef .chef-info {
+    margin: 0;
+    line-height: 10px;
+}
+
+.hero-section-introduction-chef .chef-info .chef-name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.hero-section-introduction-chef .chef-info .chef-date {
+    font-weight: bold;
+    font-size: 14px;
+    color: #00000080;
+}
+
+.hero-section-introduction-btn-view-recipe {
+    height: 60px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 40px;
+    background-color: #000;
+    border: none;
+     border-radius: 16px;
+     color: #fff;
+}
+
+.hero-section-introduction-btn-view-recipe:hover {
+    cursor: pointer;
+}
+
+.hero-section-badge {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+.category-section {
+    margin: 40px 40px 150px 40px;
+}
+
+.title-view-all {
+    display: flex;
+    justify-content:space-between;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.category-section .title-view-all > h2 {
+    font-size:42px;
+    margin: 0;
+}
+
+.category-section .title-view-all > .view-all-btn {
+    height: 60px;
+    width: 200px;
+    background-color: #E7FAFE;
+    border: none;
+    border-radius: 16px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: transform 0.5s ease;
+}
+
+.category-section .title-view-all > .view-all-btn:hover {
+    cursor: pointer;
+    background-color: #AFE5F0;
+}
+
+
+
+.category-section-items {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.category-section-items .image-container {
+    position: relative;
+    height: 300px;
+    width: 270px;
+    transition: transform 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.category-section-items .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.2s ease-in-out;
+}
+
+.category-section-items .image-container:hover {
+    transform: scale(1.1);
+    cursor: pointer; 
+}
+
+.category-section-items .image-container > p{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.simple-and-tasty-recipes-section {
+    margin: 0 30px 30px 50px;
+}
+
+.simple-and-tasty-recipes-section .title-wrapper {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.simple-and-tasty-recipes-section .title > h2 {
+    font-size: 52px;
+    margin: 0;
+}
+
+.simple-and-tasty-recipes-section .sub-title > p {
+    text-align: center;
+    font-size: 16px
+}
+
+.image-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.simple-and-tasty-recipes-section .image-wrapper > .image-container {
+    height: 620px;
+    width: 100%;
+    background: linear-gradient(to bottom, #f1fafc, #e1f2f8);
+    box-shadow: 0 10px 10px #00000025;
+    border-radius:30px;
+    box-sizing: border-box;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.simple-and-tasty-recipes-section .image-wrapper > .image-container:hover {
+    cursor: pointer;
+}
+
+.simple-and-tasty-recipes-section .image-wrapper .image-container > img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.simple-and-tasty-recipes-section .image-wrapper .image-container-ads > img {
+    height: 620px;
+    width: 100%; 
+}
+
+.simple-and-tasty-recipes-section .image-wrapper .image-container > img {
+    height:400px;
+    width: 100%;
+    border-radius: 26px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.simple-and-tasty-recipes-section .image-wrapper .image-container >  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.simple-and-tasty-recipes-section .image-wrapper .image-container .btn-wrapper {
+    display:flex;
+    align-items: center;
+}
+
+.simple-and-tasty-recipes-section .image-wrapper .image-container .btn-wrapper > button {
+
+    background-color: #e1f2f8;
+    border: none;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #585858;
+
+}
+
+.simple-and-tasty-recipes-section .image-wrapper .image-container .btn-wrapper  button > img {
+    height: 24px;
+    width: 24px;
+}
+
+.simple-and-tasty-recipes-section .image-wrapper .image-container .favorite-btn {
+    background-color: #fff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    position: absolute;
+    right: 5%;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.own-chef-kitchen-section {
+    height:600px;
+    margin: 150px 30px 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.own-chef-kitchen-section .introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10%;
+    
+}
+
+.own-chef-kitchen-section .own-chef-kitchen-section-image {
+    margin-right:10%
+}
+
+.own-chef-kitchen-section .introduction .title > h2 {
+    font-size: 46px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.own-chef-kitchen-section .introduction .subtitle {
+    font-size:16px;
+    color: #585858;
+    margin-bottom: 120px;
+
+}
+.own-chef-kitchen-section .introduction button {
+    height: 60px;
+    width: 180px;
+    border: none;
+    background-color: #000;
+    color: white;
+    font-size:14px;
+    border-radius: 16px;
+}
+
+.own-chef-kitchen-section .introduction button:hover {
+    cursor: pointer;
+}
+
+.foodieland-instagram-section {
+    background: linear-gradient(to bottom,#E7F9FD00, #E7F9FD );
+    padding: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    
+}
+
+
+.foodieland-instagram-section .title-wrapper {
+    margin-bottom: 100px;
+}
+
+
+.foodieland-instagram-section .title-wrapper > .title {
+    font-size: 36px;
+}
+
+.foodieland-instagram-section .title-wrapper > .subtitle {
+    font-size: 16px;
+    text-align: center;
+}
+
+
+.foodieland-instagram-section .instagram-content {
+    display: flex;
+    gap: 25px;
+}
+
+
+.foodieland-instagram-section .instagram-content > .image-container{
+    background-color:white;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 10px 10px #00000020;
+}
+
+.foodieland-instagram-section .instagram-content > .image-container .image-container-content {
+    display:flex;
+    flex-direction:column;
+    gap: 20px;
+}
+
+
+
+.foodieland-instagram-section .instagram-content > .image-container .image-container-content > .header {
+    display:flex;
+    justify-content: space-between;
+}
+.foodieland-instagram-section .instagram-content > .image-container .image-container-content .header .title {
+    display:flex;
+    gap: 10px;
+}
+.foodieland-instagram-section .instagram-content > .image-container .image-container-content .header .title .title-wrapper {
+    display:flex;
+    align-items:flex-start;
+}
+
+.foodieland-instagram-section .instagram-content > .image-container .image-container-content .header .title .title-wrapper p {
+ margin: 0;
+}
+
+.foodieland-instagram-section .instagram-content > .image-container .image-container-content .header .title .title-wrapper .main-title {
+    font-size:14px;
+    font-weight: bold;
+}
+
+
+.foodieland-instagram-section .instagram-content > .image-container .image-container-content .header .title .title-wrapper .sub-title {
+    font-size:12px;
+    color: #585858;
+}
+
+.foodieland-instagram-section .instagram-content > .image-container .image-container-content .social-btn-section {
+    display: flex;
+    justify-content:space-between;
+}
+.foodieland-instagram-section .instagram-content > .image-container .image-container-content .social-btn-section .main-btn{
+    display:flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.foodieland-instagram-section .instagram-content > .image-container .image-container-content .like-user {
+    display:flex;
+    gap: 10px;
+    margin: 0;
+}
+
+.foodieland-instagram-section .instagram-content > .image-container .image-container-content .like-user .like-user-wrapper > p{
+    font-weight: 10px;
+    margin: 0;
+}
+
+.foodieland-instagram-section .instagram-content > .image-container .image-container-content .like-user .like-user-wrapper .user-like {
+ font-weight: bold;
+}
+
+
+.foodieland-instagram-section .instagram-content > .image-container .image-container-content p {
+    margin: 0;
+}
+
+.foodieland-instagram-section .instagram-content > .image-container .image-container-content p > .title {
+    font-weight: bold;
+}
+
+.foodieland-instagram-section .instagram-content > .image-container .image-container-content .social-date {
+    font-size:12px;
+    color: #a7a7a7;
+}
+
+.foodieland-instagram-section .visit-instagram-btn {
+    background-color: #000;
+    height: 60px;
+    width: 230px;
+    border: none;
+    border-radius: 16px;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-top:100px;
+    
+}
+
+.foodieland-instagram-section .visit-instagram-btn > p {
+    color: white;
+    margin: 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
