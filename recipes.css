@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: #fff;
+    
+}
+.nav-bar-section {
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 40px;
+}
+.logo {
+    transition: ease-in-out 0.5s;
+}
+
+.logo img:hover{
+    cursor: pointer;
+    height: 22px;
+}
+
+.nav-bar-section-link-page {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-bar-section-link-page a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 700px;
+    font-size: 16px;
+    transition: transform 0.3s ease ;
+}
+
+.nav-bar-section-link-page a:hover {
+    font-weight: bold;
+}
+
+.nav-bar-section-social-icons  {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s ease, height 0.3s ease, width 0.3s ease;
+}
+
+.nav-bar-section-social-icons img:hover {
+    cursor: pointer;
+    transform: scale(1.2) translateY(-5px); /* Scale up and move slightly upwards */
+    height: 24px; /* Increase size */
+    width: 24px; /* Increase size */
+}
+.nav-bar-seperator {
+    border: 0.5px solid rgb(218, 218, 218);
+    margin: 0;
+}
+
+.nav-bar-section .hamburger-menu{
+    display:none;
+    
+}
+.nav-bar-section .hamburger-menu:hover {
+    cursor: pointer;
+}
+
+.side-bar-responsive {
+    display:none
+}
+
+/* Mobile phone and tablet sidebar */
+@media  (max-width: 1024px) {
+    .nav-bar-section .nav-bar-section-link-page {
+        display: none;
+    }
+
+    .nav-bar-section .nav-bar-section-social-icons {
+        display: none;
+    }
+
+    .nav-bar-section .hamburger-menu {
+        display: flex;
+    }
+
+    .side-bar-responsive {
+        position: fixed;
+        top: 0;
+        right: -500px; /* Hidden by default */
+        width: 250px;
+        height: 100%;
+        background-color: #fff;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px;
+        transition: right 0.5s ease-in-out; /* Smooth slide-in effect */
+        z-index: 1000;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    .side-bar-responsive .nav-bar-section-link-page {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        margin-bottom: 15px;
+        font-size: 18px;
+        color: #333;
+    }
+    
+    .side-bar-responsive a:hover {
+        font-weight: bold;
+    }
+
+    .side-bar-responsive .nav-bar-section-social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    /* Show Sidebar (Toggle Class) */
+    .side-bar-responsive.active {
+        right: 0; /* Slide into view */
+    }
+}
