@@ -185,7 +185,8 @@ body {
 .main-recipe-section .left-section .image-container > img {
     margin-top: 40px;
     width: 90%;
-    height:600px;
+    height: auto;
+    max-height:600px;
     border-radius: 30px;
 }
 
