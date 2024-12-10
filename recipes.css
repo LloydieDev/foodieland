@@ -127,3 +127,111 @@ body {
         right: 0; /* Slide into view */
     }
 }
+
+.main-recipe-section {
+    height:900px;
+    margin: 100px 50px;
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+.main-recipe-section .left-section {
+    /* background-color: antiquewhite; */
+    width: 80%;
+    height:900px;
+    padding: 30px;
+    box-sizing: border-box;
+
+}
+
+.main-recipe-section .left-section > h1 {
+    font-size: 3rem;
+}
+
+.main-recipe-section .left-section .chef-details {
+    max-width: 600px;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-recipe-section .left-section .chef-details > .content {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content:center;
+}
+.main-recipe-section .left-section .chef-details > .content > .wrapper {
+    line-height: 10px;
+}
+.main-recipe-section .left-section .chef-details > .content > .wrapper > .title {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.main-recipe-section .left-section .chef-details > .content > .wrapper > .sub-title {
+    font-size: .8rem;
+    color: #b8b8b8;
+}
+
+.main-recipe-section .left-section .vertical-line {
+    width: 1px;
+    height: 30px;
+    background-color: #cacaca;
+}
+
+.main-recipe-section .left-section .image-container > img {
+    margin-top: 40px;
+    width: 90%;
+    height:600px;
+    border-radius: 30px;
+}
+
+.main-recipe-section  .right-section {
+    background-color: aqua;
+    width: 50%;
+    height:900px;
+}
+
+
+
+/* for tablet size*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .main-recipe-section > .left-section > h1 {
+        font-size: 2.5rem;
+    }
+    .main-recipe-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .main-recipe-section .left-section .chef-details > .content > .wrapper {
+        line-height: 5px;
+    }
+    .main-recipe-section .left-section .chef-details > .content > .wrapper > .title {
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+    
+    .main-recipe-section .left-section .chef-details > .content > .wrapper > .sub-title {
+        font-size: 0.6rem;
+        color: #b8b8b8;
+    }
+}
+
+
+/* for mobile phone*/
+@media  (max-width: 767px) {
+    .main-recipe-section > .left-section > h1 {
+        font-size: 1.5rem;
+    }
+
+    .main-recipe-section {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+
