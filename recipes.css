@@ -225,7 +225,7 @@ body {
 /* for mobile phone*/
 @media  (max-width: 767px) {
     .main-recipe-section {
-        margin: 50px 30px;
+        margin: 50px 10px;
     }
 
     .main-recipe-section .left-section {
@@ -252,10 +252,10 @@ body {
     }
     .main-recipe-section .left-section .chef-details > .content > .wrapper > .title {
         font-weight: 600;
-        font-size: 0.4rem;
+        font-size: 0.5rem;
     }
     .main-recipe-section .left-section .chef-details > .content > .wrapper > .sub-title {
-        font-size: 0.3rem;
+        font-size: 0.4rem;
     }
     
     .main-recipe-section .left-section .chef-details .content > img {
