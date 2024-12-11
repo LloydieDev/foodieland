@@ -233,17 +233,17 @@ body {
         flex-direction: column;
     }
     .main-recipe-section > .left-section > h1 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .main-recipe-section .left-section .chef-details > .content > .wrapper {
         line-height: 3px;
     }
     .main-recipe-section .left-section .chef-details > .content > .wrapper > .title {
         font-weight: 600;
-        font-size: 0.5rem;
+        font-size: 0.4rem;
     }
     .main-recipe-section .left-section .chef-details > .content > .wrapper > .sub-title {
-        font-size: 0.5rem;
+        font-size: 0.3rem;
     }
     
     .main-recipe-section .left-section .chef-details .content > img {
