@@ -225,6 +225,10 @@ body {
 /* for mobile phone*/
 @media  (max-width: 767px) {
     .main-recipe-section {
+        margin: 50px 30px;
+    }
+
+    .main-recipe-section {
         display: flex;
         flex-direction: column;
     }
@@ -241,6 +245,15 @@ body {
     .main-recipe-section .left-section .chef-details > .content > .wrapper > .sub-title {
         font-size: 0.5rem;
     }
+    
+    .main-recipe-section .left-section .chef-details .content > img {
+        height: 16px;
+    }
+
+    .main-recipe-section .left-section .chef-details .content > .author {
+        height: 30px;
+    }
+
 
 }
 
